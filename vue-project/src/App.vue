@@ -1,13 +1,10 @@
 <script setup>
-import { ref } from 'vue'
-const count = ref(0)
+const message = 'Good morning'
 </script>
 
 <template>
   <div>
-    <button @click="count++">Increment</button>
-    <button @click="count--">decrement</button>
-    <h2>{{ count }}</h2>
+    <h2>{{ message }}</h2>
   </div>
 </template>
 
