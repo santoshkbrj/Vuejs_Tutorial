@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div :id="dynamicId">dynamicId</div>
+  <button :disabled="isButtonDisabled">isButtonDisabled</button>
 </template>
 
 <style scoped></style>
