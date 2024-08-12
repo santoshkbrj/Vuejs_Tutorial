@@ -1,7 +1,14 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+</script>
 
 <template>
-  <h1>Hello World</h1>
+  <div>
+    <button @click="count++">Increment</button>
+    <button @click="count--">decrement</button>
+    <h2>{{ count }}</h2>
+  </div>
 </template>
 
 <style scoped></style>
