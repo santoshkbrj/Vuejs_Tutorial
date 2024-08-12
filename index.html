@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div id="app">{{ message }}</div>
+    <div id="app"></div>
 
     <script type="importmap">
   {
@@ -18,16 +18,9 @@
   }
 </script>
     <script type="module">
-        import { createApp, ref } from 'vue';
-
-        createApp({
-            setup() {
-                const message = ref('Welcome to learn Vue js')
-                return {
-                    message
-                }
-            }
-        }).mount('#app')
+        import { createApp } from 'vue';
+        import App from './app.js';
+        createApp(App).mount('#app')
     </script>
 </body>
 
