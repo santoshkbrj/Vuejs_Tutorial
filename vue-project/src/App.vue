@@ -1,13 +1,19 @@
 <script setup>
-const objectOfAttrs = {
-  id: 'container',
-  class: 'wrapper',
-  style: 'background-color:green',
-}
+const id = 2
+const number = 8
+const ok = false
+const message = 'Have a nice day'
 </script>
 
 <template>
-  <div v-bind="objectOfAttrs">This is simple paragraph</div>
+  <div>
+    <p>{{ number + 1 }}</p>
+    <p>{{ ok ? 'YES' : 'NO' }}</p>
+
+    <p>{{ message.split('').reverse().join('') }}</p>
+
+    <div :id="`list-${id}`">This is a simple paragraph</div>
+  </div>
 </template>
 
 <style scoped></style>
