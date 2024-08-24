@@ -1,11 +1,11 @@
 <script setup>
-import ReactiveMethod from './components/ReactiveMethod.vue';
+import ComputedComponent from './components/ComputedComponent.vue';
 
 </script>
 
 <template>
   <h1>This is app component</h1>
-  <reactive-method/>
+  <computed-component/>
 </template>
 
 <style scoped></style>
