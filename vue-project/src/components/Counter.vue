@@ -5,11 +5,12 @@
             <button @click.prevent="increment()">+</button>
             <span>{{ counter }}</span>
             <button @click.prevent="decrement()">-</button>
+            <div>The counter value is {{ oddorEven }}</div>
         </div>
     </div>
 </template>
 <script setup>
-import {ref} from 'vue';
+import {ref, computed} from 'vue';
         const counter = ref(0);
         function increment(){
             counter.value++;
@@ -17,6 +18,9 @@ import {ref} from 'vue';
         function decrement(){
             counter.value--;
         }
+    const oddorEven = computed(()=>{
+        return counter.value%2 == 0 ? 'even' : 'odd'
+    })
 </script>
 <style scoped>
 .text-center{
