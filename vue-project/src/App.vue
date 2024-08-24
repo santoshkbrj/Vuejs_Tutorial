@@ -1,13 +1,12 @@
 <script setup>
-import ComputedComponent from './components/ComputedComponent.vue';
-import Counter from './components/Counter.vue';
+import ClassComponent from "./components/ClassComponent.vue";
+
 
 </script>
 
 <template>
   <h1>This is app component</h1>
-  <computed-component/>
-  <counter/>
+  <class-component/>
 </template>
 
 <style scoped></style>
