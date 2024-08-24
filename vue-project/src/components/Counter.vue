@@ -8,27 +8,15 @@
         </div>
     </div>
 </template>
-<script>
+<script setup>
 import {ref} from 'vue';
-export default {
-    setup(){
-        const counter = ref(0)
+        const counter = ref(0);
         function increment(){
             counter.value++;
         }
         function decrement(){
             counter.value--;
         }
-        return{
-            counter,
-            increment,
-            decrement
-        }
-    },
-
-  
-    
-}
 </script>
 <style scoped>
 .text-center{
