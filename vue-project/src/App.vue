@@ -1,12 +1,11 @@
 <script setup>
-import ClassComponent from "./components/ClassComponent.vue";
-
+import StyleComponent from "./components/StyleComponent.vue";
 
 </script>
 
 <template>
   <h1>This is app component</h1>
-  <class-component/>
+  <style-component/>
 </template>
 
 <style scoped></style>
