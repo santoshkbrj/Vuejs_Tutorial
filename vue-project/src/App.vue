@@ -1,11 +1,11 @@
 <script setup>
-import StyleComponent from "./components/StyleComponent.vue";
+import ConditionalComponent from "./components/ConditionalComponent.vue";
 
 </script>
 
 <template>
   <h1>This is app component</h1>
-  <style-component/>
+  <conditional-component/>
 </template>
 
 <style scoped></style>
