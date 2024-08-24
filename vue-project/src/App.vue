@@ -1,4 +1,5 @@
 <script setup>
+import MyComponent from './components/MyComponent.vue';
 const id = 2
 const number = 8
 const ok = false
