@@ -1,11 +1,10 @@
 <script setup>
-import ConditionalComponent from "./components/ConditionalComponent.vue";
-
+import ListRenderingComponent from "./components/ListRenderingComponent.vue";
 </script>
 
 <template>
   <h1>This is app component</h1>
-  <conditional-component/>
+ <list-rendering-component/>
 </template>
 
 <style scoped></style>
