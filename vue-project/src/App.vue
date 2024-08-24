@@ -13,6 +13,7 @@ const message = 'Have a nice day'
     <p>{{ message.split('').reverse().join('') }}</p>
 
     <div :id="`list-${id}`">This is a simple paragraph</div>
+    <my-component/>
   </div>
 </template>
 
