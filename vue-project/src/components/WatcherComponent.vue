@@ -13,10 +13,14 @@
         <div>
             y: <input type="text" v-model="y"/>
         </div>
+
+        <div>
+           count: <input type="text" v-model="obj.count"/>
+        </div>
     </div>
 </template>
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, reactive } from 'vue';
   const question = ref('');
   const answer = ref("Question usually contain a question mark. 😉");
   const loading = ref(false);
@@ -55,6 +59,18 @@ watch([x,y], ([newx, newy])=>{
 
 watch([x,()=>y.value], ([newx, newy])=>{
     console.log(`values of x and y is ${newx} and ${newy}`)
+})
+
+
+const obj = reactive({
+    count: 0,
+    name: 'john'
+});
+
+watch(
+    ()=>obj.count, 
+    (newCount, oldCount)=>{
+    console.log(`new count is ${newCount} and ${oldCount}`)
 })
 </script>
 <style>
