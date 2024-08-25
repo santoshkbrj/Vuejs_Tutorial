@@ -1,11 +1,11 @@
 <script setup>
-import EventHandling from "./components/EventHandling.vue";
+import FormInput from "./components/FormInput.vue";
 </script>
 
 <template>
   <div>
     <h1>This is app component</h1>
-    <event-handling/>
+    <form-input/>
   </div>
 </template>
 
