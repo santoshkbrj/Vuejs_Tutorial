@@ -6,6 +6,13 @@
         </p>
         <p>{{answer}}</p>
         <img :src="imageData" style="width:200px"/>
+
+        <div>
+            X: <input type="text" v-model="x"/>
+        </div>
+        <div>
+            y: <input type="text" v-model="y"/>
+        </div>
     </div>
 </template>
 <script setup>
@@ -30,6 +37,24 @@ import { ref, watch } from 'vue';
   } finally{
     loading.value = false;
   }
+})
+
+const x = ref('');
+const y = ref('');
+
+watch(x, (newX)=>{
+    console.log(`value of newx is ${newX}` )
+});
+watch(y, (newY)=>{
+    console.log(`value of newx is ${newY}` )
+});
+
+watch([x,y], ([newx, newy])=>{
+    console.log(`values of x and y is ${newx} and ${newy}`)
+})
+
+watch([x,()=>y.value], ([newx, newy])=>{
+    console.log(`values of x and y is ${newx} and ${newy}`)
 })
 </script>
 <style>
