@@ -1,11 +1,11 @@
 <script setup>
-import FormInput from "./components/FormInput.vue";
+import WatcherComponent from "./components/WatcherComponent.vue";
 </script>
 
 <template>
   <div>
     <h1>This is app component</h1>
-    <form-input/>
+   <watcher-component/>
   </div>
 </template>
 
