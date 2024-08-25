@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, watchEffect} from 'vue';
+import {onBeforeMount, onBeforeUnmount, onBeforeUpdate, onMounted, onUpdated, ref, watchEffect} from 'vue';
 // import {watch} from 'vue'
 
   const todoId = ref(1);
@@ -27,9 +27,29 @@ import { ref, watchEffect} from 'vue';
     data.value = (await response.json()).title;
   })
 
-  
   const unwatch = watchEffect(() => {})
   unwatch();
+
+// Different Life cycle hooks
+  onBeforeMount(()=>{
+    console.log('before mounted')
+  });
+  onMounted(()=>{
+    console.log('mounted')
+  });
+  onBeforeUnmount(()=>{
+    console.log('On Before Unmount')
+  });
+  onMounted(()=>{
+    console.log('on unMounted')
+  })
+  onBeforeUpdate(()=>{
+    console.log('On Before update')
+  });
+
+  onUpdated(()=>{
+    console.log('Updated')
+  })
 </script>
 
 <style>
