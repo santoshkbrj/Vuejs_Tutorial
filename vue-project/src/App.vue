@@ -1,11 +1,11 @@
 <script setup>
-import WatcherComponent from "./components/WatcherComponent.vue";
+import WatchEffectComponent from "./components/WatchEffectComponent.vue";
 </script>
 
 <template>
   <div>
     <h1>This is app component</h1>
-   <watcher-component/>
+    <watch-effect-component/>
   </div>
 </template>
 
