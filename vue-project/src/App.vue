@@ -1,11 +1,11 @@
 <script setup>
-import WatchEffectComponent from "./components/WatchEffectComponent.vue";
+import TemplateRefComponent from "./components/TemplateRefComponent.vue";
 </script>
 
 <template>
   <div>
     <h1>This is app component</h1>
-    <watch-effect-component/>
+   <template-ref-component/>
   </div>
 </template>
 
