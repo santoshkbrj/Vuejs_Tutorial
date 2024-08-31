@@ -8,7 +8,8 @@
 <script setup>
 defineProps({
   title: String,
-  id: Number
+  id: Number,
+  commentId: Array
 })
 </script>
 
