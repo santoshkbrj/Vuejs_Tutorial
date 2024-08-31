@@ -39,7 +39,10 @@ onMounted(() => console.log(itemRefs.value));
 
 const childRef = ref(null);
 onMounted(()=>{
-   console.log(childRef)
+   console.log(childRef.value)
+})
+defineExpose({
+   childRef,
 })
 
 </script>
