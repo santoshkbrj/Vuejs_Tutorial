@@ -15,7 +15,16 @@
         required: true
      }
    })
-   const emit = defineEmits(['editPost']);
+   const emit = defineEmits({
+    editPost(postId){
+        if(postId && typeof postId === 'number' ) {
+            return true
+        }
+        else{
+            return false
+        }
+    }
+   });
 
    const updatePost = ()=>{
     emit('editPost', props.post.id);
