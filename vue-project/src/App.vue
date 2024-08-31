@@ -5,7 +5,7 @@ import SinglePostComponent from "./components/SinglePostComponent.vue";
 const postTitle = ref('My journey with vue');
 
 const postDetails ={
-  title: 'My Post details',
+  title: ' My Post details ',
   id: 43
 }
 </script>
