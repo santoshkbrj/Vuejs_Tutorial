@@ -2,8 +2,10 @@
   <div>
     <div>Id: {{ post.id }}</div>
     <div>Title: {{ post.title }}</div>
-        <buton @click.prevent="$emit('editPost', post.id)">Edit Post</buton>
+        <buton @click.prevent="updatePost">Edit Post</buton>
+        <hr/>
   </div>
+
 </template>
 
 <script setup>
@@ -13,10 +15,11 @@
         required: true
      }
    })
-//    const emit = defineEmits(['editPost']);
-//    const updatePost = ()=>{
-//     emit('editPost', 'post.id');
-//    }
+   const emit = defineEmits(['editPost']);
+
+   const updatePost = ()=>{
+    emit('editPost', props.post.id);
+   }
 
 </script>
 

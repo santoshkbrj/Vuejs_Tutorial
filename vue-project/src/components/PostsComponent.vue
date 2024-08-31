@@ -3,7 +3,6 @@
     <h3>Post component</h3>
     <h3>Post Details</h3>
     <OnePostComponent v-for="post in posts" :post="post" :key="post.id" @edit-post="updatePost"/>
-
   </div>
 </template>
 
